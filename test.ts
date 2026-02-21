@@ -1,14 +1,20 @@
-import { litres } from "./solution";
-import { assert } from "chai";
+import { evenOrOdd } from "./solution";
+import { assert    } from "chai";
 
-describe('Cycling', () => {
-  it('Some basic tests', () => {
-    assert.equal(litres(2),1);
-    assert.equal(litres(1.4),0);
-    assert.equal(litres(12.3),6);
-    assert.equal(litres(0.82),0);
-    assert.equal(litres(11.8),5);
-    assert.equal(litres(1787),893);
-    assert.equal(litres(0),0);
+describe("Example tests", function() {
+  it("evenOrOdd(1) should return 'Odd'", function(){
+    assert.equal(evenOrOdd(1), "Odd");
+  });
+  it("evenOrOdd(2) should return 'Even'", function(){
+    assert.equal(evenOrOdd(2), "Even");
+  });
+  it("evenOrOdd(-1) should return 'Odd'", function(){
+    assert.equal(evenOrOdd(-1), "Odd");
+  });
+  it("evenOrOdd(-2) should return 'Even'", function(){
+    assert.equal(evenOrOdd(-2), "Even");
+  });
+  it("evenOrOdd(0) should return 'Even'", function(){
+    assert.equal(evenOrOdd(0), "Even");
   });
 });
