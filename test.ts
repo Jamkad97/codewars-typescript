@@ -1,9 +1,14 @@
-import {zeroFuel} from "./solution";
-import {assert} from "chai";
+import { litres } from "./solution";
+import { assert } from "chai";
 
-describe("zeroFill", function() {
-  it("Sample Tests", function() {
-    assert.equal(zeroFuel(50, 25, 2), true);
-    assert.equal(zeroFuel(100, 50, 1), false);
+describe('Cycling', () => {
+  it('Some basic tests', () => {
+    assert.equal(litres(2),1);
+    assert.equal(litres(1.4),0);
+    assert.equal(litres(12.3),6);
+    assert.equal(litres(0.82),0);
+    assert.equal(litres(11.8),5);
+    assert.equal(litres(1787),893);
+    assert.equal(litres(0),0);
   });
 });
