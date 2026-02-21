@@ -1,20 +1,9 @@
-import { evenOrOdd } from "./solution";
-import { assert    } from "chai";
+import {boolToWord} from "./solution";
+import {assert} from "chai";
 
-describe("Example tests", function() {
-  it("evenOrOdd(1) should return 'Odd'", function(){
-    assert.equal(evenOrOdd(1), "Odd");
-  });
-  it("evenOrOdd(2) should return 'Even'", function(){
-    assert.equal(evenOrOdd(2), "Even");
-  });
-  it("evenOrOdd(-1) should return 'Odd'", function(){
-    assert.equal(evenOrOdd(-1), "Odd");
-  });
-  it("evenOrOdd(-2) should return 'Even'", function(){
-    assert.equal(evenOrOdd(-2), "Even");
-  });
-  it("evenOrOdd(0) should return 'Even'", function(){
-    assert.equal(evenOrOdd(0), "Even");
+describe("boolToWord", function() {
+  it("Sample tests", function() {
+    assert.equal(boolToWord(true), "Yes");
+    assert.equal(boolToWord(false), "No");
   });
 });

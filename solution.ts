@@ -1,3 +1,3 @@
-export function evenOrOdd(n:number):string {
-  return n % 2 === 0 ? "Even" : "Odd";
-}
+export const boolToWord = (bool: boolean): string => {
+  return bool ? "Yes" : "No";
+};
