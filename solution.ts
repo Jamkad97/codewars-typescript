@@ -1,3 +1,7 @@
-export const makeNegative = (num: number): number => {
-  return num > 0 ? -num : num;
-};
+export function monkeyCount(n: number): number[] {
+  const result: number[] = [];
+  for (let i = 1; i <= n; i++) {
+    result.push(i);
+  }
+  return result;
+}
