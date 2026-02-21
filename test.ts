@@ -1,9 +1,8 @@
-import {boolToWord} from "./solution";
+import {makeNegative} from "./solution";
 import {assert} from "chai";
 
-describe("boolToWord", function() {
+describe("makeNegative", function() {
   it("Sample tests", function() {
-    assert.equal(boolToWord(true), "Yes");
-    assert.equal(boolToWord(false), "No");
+    assert.equal(makeNegative(42), -42);
   });
 });

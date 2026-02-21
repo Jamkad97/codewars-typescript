@@ -1,3 +1,3 @@
-export const boolToWord = (bool: boolean): string => {
-  return bool ? "Yes" : "No";
+export const makeNegative = (num: number): number => {
+  return num > 0 ? -num : num;
 };
