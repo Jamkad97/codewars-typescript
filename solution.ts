@@ -1,20 +1,11 @@
-export function dirReduc(arr: string[]): string[] {
-  const opposite: Record<string, string> = {
-    NORTH: "SOUTH",
-    SOUTH: "NORTH",
-    EAST: "WEST",
-    WEST: "EAST"
-  };
+export function getSum(a: number, b: number): number {
+  const min = Math.min(a, b);
+  const max = Math.max(a, b);
 
-  const stack: string[] = [];
-
-  for (const dir of arr) {
-    if (stack.length > 0 && opposite[dir] === stack[stack.length - 1]) {
-      stack.pop();
-    } else {
-      stack.push(dir);
-    }
+  let sum = 0;
+  for (let i = min; i <= max; i++) {
+    sum += i;
   }
 
-  return stack;
+  return sum;
 }

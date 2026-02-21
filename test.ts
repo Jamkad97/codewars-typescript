@@ -1,12 +1,9 @@
-//import {dirReduc} from './solution';
-//import chai, {assert} from "chai";
-//chai.config.truncateThreshold = 0;
+import { getSum } from './solution';
 import { assert } from "chai";
-import {dirReduc} from "./solution";
 
-describe("Fixed Tests", function() {
-  it("dirReduc", function() {
-    assert.deepEqual(dirReduc(["NORTH", "SOUTH", "SOUTH", "EAST", "WEST", "NORTH", "WEST"]), ["WEST"]);
-    assert.deepEqual(dirReduc(["NORTH","SOUTH","SOUTH","EAST","WEST","NORTH"]), []);
+describe("getSum", function(){
+  it("Sample Tests", function() {
+    assert.strictEqual(getSum(0,-1),-1);
+    assert.strictEqual(getSum(0,1),1);
   });
 });
